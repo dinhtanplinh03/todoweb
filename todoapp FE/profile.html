@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ cá nhân</title>
+    <link rel="stylesheet" href="styles_profile.css">
+</head>
+
+<body>
+    <div class="profile-container">
+        <h2>Hồ sơ cá nhân</h2>
+
+        <!-- Thông tin người dùng -->
+        <div class="profile-info">
+            <p><strong>Tên:</strong> <span id="user-name"></span></p>
+            <p><strong>Email:</strong> <span id="user-email"></span></p>
+        </div>
+
+        <!-- Cập nhật thông tin cá nhân -->
+        <h3>Cập nhật hồ sơ</h3>
+        <form id="update-profile-form">
+            <input type="text" id="new-name" placeholder="Nhập tên mới" required>
+            <button type="submit">Cập nhật</button>
+        </form>
+
+        <!-- Đổi mật khẩu -->
+        <h3>Đổi mật khẩu</h3>
+        <form id="change-password-form">
+            <input type="password" id="old-password" placeholder="Mật khẩu cũ" required>
+            <input type="password" id="new-password" placeholder="Mật khẩu mới" required>
+            <button type="submit">Đổi mật khẩu</button>
+        </form>
+
+        <!-- Nút đăng xuất -->
+        <button class="logout-btn" onclick="logout()">Đăng xuất</button>
+    </div>
+
+    <script src="js/user.js"></script>
+</body>
+
+</html>

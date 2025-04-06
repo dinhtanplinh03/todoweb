@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Công Việc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h2>📌 Quản lý Công Việc</h2>
+            <div class="profile-actions">
+                <button class="btn profile-btn" onclick="window.location.href='profile.html'">👤 Hồ Sơ</button>
+                <button class="btn logout-btn" onclick="logout()">🚪 Đăng Xuất</button>
+            </div>
+        </header>
+
+        <!-- Form thêm công việc -->
+        <section class="task-section">
+            <h3>➕ Thêm Công Việc</h3>
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Tên công việc" required>
+                <input type="datetime-local" id="task-deadline" required> <!-- Thêm lựa chọn giờ -->
+                <button type="submit" class="btn add-btn">Thêm Công Việc</button>
+            </form>
+        </section>
+
+        <!-- Danh sách công việc -->
+        <section class="task-list-section">
+            <h3>📋 Danh Sách Công Việc</h3>
+            <ul id="task-list"></ul>
+        </section>
+    </div>
+
+    <script src="js/todo.js"></script>
+</body>
+
+</html>
